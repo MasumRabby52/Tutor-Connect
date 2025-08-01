@@ -101,44 +101,67 @@ const About: React.FC = () => {
             </div>
           </div>
         </section>
-        
+
         {/* Team Section */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center">Meet Our Team With Facebook</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="text-center">
-                <a href="https://web.facebook.com/junaed.masum.rabby">
-                <img 
-                  src="masum.jpg" 
-                  alt="Team member" 
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                />
-                </a>
+<section className="py-16">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-12 text-center">Meet Our Team</h2>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                <h3 className="text-xl font-semibold">Md Masum Rabby</h3>
-                <p className="text-brand-blue">Founder & CEO</p>
-                <p className="text-gray-600 mt-2">Shahjalal University of Science and Technology</p>
-              </div>
-              
-              <div className="text-center">
-                <a href="https://web.facebook.com/kamrul.hasan.nayon.2024">
-                <img 
-                  src="kamrul.jpg" 
-                  alt="Team member" 
-                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
-                />
-                </a>
+      <div className="text-center">
+        <img 
+          src="masum.jpg" 
+          alt="Team member" 
+          className="w-32 h-32 rounded-full mx-auto mb-2 object-cover"
+        />
+        {/* Facebook icon link */}
+        <a 
+          href="https://web.facebook.com/junaed.masum.rabby" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-block text-blue-600 hover:text-blue-800 mb-4"
+          aria-label="Facebook Profile of Md Masum Rabby"
+        >
+          {/* Facebook SVG icon */}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 mx-auto">
+            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.466.098 2.796.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.326V1.326C24 .593 23.407 0 22.675 0z"/>
+          </svg>
+        </a>
 
-                <h3 className="text-xl font-semibold">Md kamrul Hasan</h3>
-                <p className="text-brand-blue">CTO & CMO</p>
-                <p className="text-gray-600 mt-2">Shahjalal University of Science and Technology</p>
-              </div>
-              
-            </div>
-          </div>
-        </section>
-        
+        <h3 className="text-xl font-semibold">Md Masum Rabby</h3>
+        <p className="text-brand-blue">Founder & CEO</p>
+        <p className="text-gray-600 mt-2">Shahjalal University of Science and Technology</p>
+      </div>
+
+      <div className="text-center">
+        <img 
+          src="kamrul.jpg" 
+          alt="Team member" 
+          className="w-32 h-32 rounded-full mx-auto mb-2 object-cover"
+        />
+        {/* Facebook icon link */}
+        <a 
+          href="https://web.facebook.com/kamrul.hasan.nayon.2024" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-block text-blue-600 hover:text-blue-800 mb-4"
+          aria-label="Facebook Profile of Md Kamrul Hasan"
+        >
+          {/* Facebook SVG icon */}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" className="w-6 h-6 mx-auto">
+            <path d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.466.098 2.796.143v3.24h-1.918c-1.504 0-1.795.715-1.795 1.763v2.31h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.324-.593 1.324-1.326V1.326C24 .593 23.407 0 22.675 0z"/>
+          </svg>
+        </a>
+
+        <h3 className="text-xl font-semibold">Md kamrul Hasan</h3>
+        <p className="text-brand-blue">CTO & CMO</p>
+        <p className="text-gray-600 mt-2">Shahjalal University of Science and Technology</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
         {/* Call to Action */}
         <section className="py-16 bg-brand-blue text-white">
           <div className="container mx-auto px-4 text-center">
