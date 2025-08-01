@@ -133,7 +133,7 @@ const Register: React.FC = () => {
                   <Input
                     id="name"
                     name="name"
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                     required
                     value={credentials.name}
                     onChange={handleChange}
