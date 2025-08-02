@@ -14,10 +14,16 @@ import (
 )
 
 type Teacher struct {
-	ID       uint   `json:"id" gorm:"primaryKey"`
-	Name     string `json:"name"`
-	Subject  string `json:"subject"`
-	ImageURL string `json:"imageUrl"`
+	ID            uint   `json:"id" gorm:"primaryKey"`
+	Name          string `json:"name"`
+	Email         string `json:"email"`
+	PhoneNumber   string `json:"phoneNumber"`
+	Bio           string `json:"bio"`
+	Location      string `json:"location"`
+	Qualification string `json:"qualification"`
+	Availability  string `json:"availability"`
+	Subject       string `json:"subject"`
+	ImageURL      string `json:"imageUrl"`
 }
 
 var DB *gorm.DB
@@ -99,6 +105,12 @@ func main() {
 		}
 
 		teacher.Name = updatedTeacher.Name
+		teacher.Email = updatedTeacher.Email
+		teacher.PhoneNumber = updatedTeacher.PhoneNumber
+		teacher.Bio = updatedTeacher.Bio
+		teacher.Location = updatedTeacher.Location
+		teacher.Qualification = updatedTeacher.Qualification
+		teacher.Availability = updatedTeacher.Availability
 		teacher.Subject = updatedTeacher.Subject
 		teacher.ImageURL = updatedTeacher.ImageURL
 
