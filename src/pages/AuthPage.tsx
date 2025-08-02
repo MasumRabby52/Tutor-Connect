@@ -19,6 +19,7 @@ const AuthPage: React.FC = () => {
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
+                                              {/* dan e bam e 1 rem faka thakbe px-4=1rem=(16px) */}
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             
@@ -45,7 +46,7 @@ const AuthPage: React.FC = () => {
                   <CardHeader className="pb-4">
                     <CardTitle className="flex items-center gap-2 justify-center text-lg">
                       <LogIn className="h-5 w-5 text-brand-blue" />
-                      Login System
+                       Login System
                     </CardTitle>
                     <CardDescription className="text-center">
                       Sign in to your existing account

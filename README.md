@@ -12,10 +12,8 @@ A platform for guardians to easily find and connect with qualified teachers base
 
 ## 🚀 Tech Stack
 
-- React + Vite
 - Tailwind CSS + shadcn/ui
 - TypeScript
-- Firebase (Authentication, Firestore)
 - React Hook Form
 
 ## 📦 Installation
