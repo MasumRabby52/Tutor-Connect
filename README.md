@@ -12,15 +12,18 @@ A platform for guardians to easily find and connect with qualified teachers base
 
 ## 🚀 Tech Stack
 
-- Tailwind CSS + shadcn/ui
+- Tailwind CSS
+- html
 - TypeScript
 - React Hook Form
+- GOLANG
+  
 
 ## 📦 Installation
 
-```bash
+~~~
 git clone https://github.com/MasumRabby52/guardian-teacher-find.git
-cd guardian-teacher-find
 npm install
 npm run dev
+~~~
 
