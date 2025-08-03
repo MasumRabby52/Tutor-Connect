@@ -14,16 +14,16 @@ import (
 )
 
 type Teacher struct {
-	ID            uint   `json:"id" gorm:"primaryKey"`
-	Name          string `json:"name"`
-	Email         string `json:"email"`
-	PhoneNumber   string `json:"phoneNumber"`
-	Bio           string `json:"bio"`
-	Location      string `json:"location"`
-	Qualification string `json:"qualification"`
-	Availability  string `json:"availability"`
-	Subject       string `json:"subject"`
-	ImageURL      string `json:"imageUrl"`
+	ID            uint   `json:"id" gorm:"primaryKey;autoIncrement"`
+	Name          string `json:"name" gorm:"type:varchar(255)"`
+	Email         string `json:"email" gorm:"type:varchar(255)"`
+	PhoneNumber   string `json:"phoneNumber" gorm:"column:phone_number;type:varchar(50)"`
+	Bio           string `json:"bio" gorm:"type:text"`
+	Location      string `json:"location" gorm:"type:varchar(255)"`
+	Qualification string `json:"qualification" gorm:"type:varchar(255)"`
+	Availability  string `json:"availability" gorm:"type:varchar(255)"`
+	Subject       string `json:"subject" gorm:"type:varchar(255)"`
+	ImageURL      string `json:"imageUrl" gorm:"column:image_url;type:varchar(255)"`
 }
 
 var DB *gorm.DB
@@ -50,7 +50,10 @@ func initDB() {
 	}
 
 	// Auto migrate Teacher table
-	DB.AutoMigrate(&Teacher{})
+	err = DB.AutoMigrate(&Teacher{})
+	if err != nil {
+		log.Fatal("Failed to migrate:", err)
+	}
 	fmt.Println("Database Connected & Migrated!")
 }
 
@@ -104,6 +107,7 @@ func main() {
 			return
 		}
 
+		// Update fields
 		teacher.Name = updatedTeacher.Name
 		teacher.Email = updatedTeacher.Email
 		teacher.PhoneNumber = updatedTeacher.PhoneNumber
